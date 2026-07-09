@@ -1,3 +1,15 @@
+html {
+    color-scheme: light dark;
+    --background-color: light-dark(#f0f0f0, #121212);
+    --text-color: light-dark(#333, #f4f4f4);
+    --selected-item-background: light-dark(#adadad, #555);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 modifier-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -6,7 +18,7 @@ modifier-grid {
 
 modifier-item {
     cursor: pointer;
-    
+
     display: block;
     position: relative;
 
@@ -16,7 +28,7 @@ modifier-item {
     border-width: 2px;
 
     &[checked] {
-        background-color: #adadad;
+        background-color: var(--selected-item-background);
         border-style: dashed;
     }
 
@@ -57,4 +69,13 @@ footer {
     margin-top: 2em;
     font-size: x-small;
     text-align: right;
+}
+
+theme-switch {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    user-select: none;
+    font-size: 2em;
 }

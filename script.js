@@ -46,3 +46,6 @@ class ModifierItem extends HTMLElement {
 }
 
 customElements.define('modifier-item', ModifierItem);
+
+// Set correct theme switch icon after it loads
+document.querySelector('theme-switch')?.setContent(ThemeSwitch.theme === 'dark');

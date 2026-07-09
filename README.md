@@ -6,8 +6,9 @@
 
 ## TODO:
 - [ ] conflicting groups
-- [ ] dark mode
+- [x] dark mode
 - [ ] sticky sum while scrolling
 - [ ] highlight sum with a red/green color
 - [ ] mobile responsiveness
 - [ ] footer with credits and repo link
+- [ ] saving to local storage
