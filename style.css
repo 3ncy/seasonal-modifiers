@@ -1,0 +1,37 @@
+modifier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+modifier-item {
+    display: block;
+    cursor: pointer;
+
+    &[checked] {
+        background-color: #adadad;
+    }
+}
+
+modifier-name {
+    display: inline-block;
+}
+
+modifier-description {
+    display: block
+}
+
+modifier-points {
+    display: inline-block;
+    font-size: x-large;
+    margin-left: 1em;
+}
+
+span#sum {
+    font-size: x-large;
+}
+
+body {
+    margin-right: 20vw;
+    margin-left: 20vw;
+}

@@ -1,0 +1,227 @@
+{
+  "title": "Kord Breach",
+  "disclaimer": "Modifier values may change before the start of the season for balancing reasons.",
+  "personalRule": "Positive and negative traits that apply only to your character. Each modifier has a point cost. To create a character, the total points must be 0 or higher.",
+  "seasons": [
+    {
+      "id": 1,
+      "label": "Season 1",
+      "global": [
+        {
+          "id": 1,
+          "name": "No Insurance",
+          "description": "Cannot insure items before raid"
+        },
+        {
+          "id": 2,
+          "name": "Black Division",
+          "description": "Black Division operatives can be encountered on specific locations"
+        },
+        {
+          "id": 3,
+          "name": "No FIR for Hideout",
+          "description": "Hideout zones don't require the Found In Raid status"
+        },
+        {
+          "id": 4,
+          "name": "Armor Shortage",
+          "description": "Traders across Tarkov are experiencing an armor shortage"
+        },
+        {
+          "id": 5,
+          "name": "Handyman",
+          "description": "Item crafting time is reduced by 50%. Crafting skill starts at level 51"
+        },
+        {
+          "id": 6,
+          "name": "Seasoned PMCs",
+          "description": "Your character gains 25% more raid experience"
+        }
+      ],
+      "personalPositive": [
+        {
+          "id": 1,
+          "name": "Marathon Runner",
+          "description": "Arm and leg stamina is consumed 15% slower",
+          "points": -3
+        },
+        {
+          "id": 2,
+          "name": "Safecracker",
+          "description": "Mechanical keys have a 20% chance not to lose durability when used",
+          "points": -6
+        },
+        {
+          "id": 3,
+          "name": "Bushborne",
+          "description": "Walking in vegetation generates 50% less noise and movement slowdown",
+          "points": -5
+        },
+        {
+          "id": 4,
+          "name": "Juice Time",
+          "description": "Consuming a juice drink grants the Painkiller effect for 60 seconds",
+          "points": -2
+        },
+        {
+          "id": 5,
+          "name": "Sailor's Nostalgia",
+          "description": "Consuming canned fish grants the Health Regeneration (+2) effect for 10 seconds",
+          "points": -2
+        },
+        {
+          "id": 6,
+          "name": "Youth",
+          "description": "Energy is consumed 20% slower. Arm and leg stamina is increased by 10",
+          "points": -3
+        },
+        {
+          "id": 7,
+          "name": "Street Tax",
+          "description": "Once per week, some Scavs pay you protection money",
+          "points": -1
+        },
+        {
+          "id": 8,
+          "name": "The Tarkov Shooter",
+          "description": "Bolt-action Rifles skill leveling speed is increased by 100%. Bolt-action Rifles skill starts at level 10",
+          "points": -3
+        },
+        {
+          "id": 9,
+          "name": "Diet",
+          "description": "All provisions consume 50% less resource",
+          "points": -1
+        },
+        {
+          "id": 10,
+          "name": "Hercules",
+          "description": "Strength and Endurance skills start at level 15",
+          "points": -3
+        },
+        {
+          "id": 11,
+          "name": "Sprinter",
+          "description": "Running speed is increased by 5%",
+          "points": -2
+        },
+        {
+          "id": 12,
+          "name": "Thrombophilia",
+          "description": "Bleeding chance is decreased by 25%",
+          "points": -2
+        },
+        {
+          "id": 13,
+          "name": "Hypodipsia",
+          "description": "Hydration is consumed 15% slower",
+          "points": -2
+        },
+        {
+          "id": 14,
+          "name": "Polyphagia",
+          "description": "Energy is consumed 15% slower",
+          "points": -2
+        },
+        {
+          "id": 15,
+          "name": "Sturdy Bones",
+          "description": "Limb fracture chance is decreased by 15%. Falling from heights deals 15% less damage",
+          "points": -3
+        },
+        {
+          "id": 16,
+          "name": "Average",
+          "description": "All character skills start at level 25 but cannot be increased further (Excluding Crafting)",
+          "points": -10
+        },
+        {
+          "id": 17,
+          "name": "Kappa Protocol",
+          "description": "Immediately receive Secure container Kappa",
+          "points": -21
+        }
+      ],
+      "personalNegative": [
+        {
+          "id": 18,
+          "name": "Hemophilia",
+          "description": "Bleeding chance is increased by 25%",
+          "points": 2
+        },
+        {
+          "id": 19,
+          "name": "Osteoporosis",
+          "description": "Limb fracture chance is increased by 15%. Falling from heights deals 15% more damage",
+          "points": 3
+        },
+        {
+          "id": 20,
+          "name": "Exhaustion",
+          "description": "Arm and leg stamina recovers 15% slower. Arm and leg stamina is reduced by 10",
+          "points": 4
+        },
+        {
+          "id": 21,
+          "name": "Well That Hurt!",
+          "description": "All medkit uses consume 25% more resource",
+          "points": 2
+        },
+        {
+          "id": 22,
+          "name": "Incompetent",
+          "description": "All character skills are leveled 25% slower (Excluding Bolt-action Rifles). All character skills can only be increased up to level 30 (Excluding Crafting)",
+          "points": 4
+        },
+        {
+          "id": 23,
+          "name": "Polydipsia",
+          "description": "Hydration is consumed 15% faster",
+          "points": 1
+        },
+        {
+          "id": 24,
+          "name": "Chronic Fatigue Syndrome",
+          "description": "Energy is consumed 15% faster",
+          "points": 1
+        },
+        {
+          "id": 25,
+          "name": "Personality Vacuum",
+          "description": "Charisma skill cannot be increased. All trader items cost 20% more",
+          "points": 2
+        },
+        {
+          "id": 26,
+          "name": "Dr. Jekyll",
+          "description": "After gaining the Fresh Wound status, it cannot be removed until the end of the raid",
+          "points": 1
+        },
+        {
+          "id": 27,
+          "name": "Allergic",
+          "description": "Become allergic to 2 random items from the Provisions or Medication category",
+          "points": 3
+        },
+        {
+          "id": 28,
+          "name": "Broken Secure Container",
+          "description": "Secure container is restricted to cash, keys, dogtags, special equipment, and certain containers",
+          "points": 4
+        },
+        {
+          "id": 29,
+          "name": "No Flea Market",
+          "description": "Trading with players on the Flea Market is disabled",
+          "points": 6
+        },
+        {
+          "id": 30,
+          "name": "Third Leg",
+          "description": "Movement speed is decreased by 1%. Buying items at Therapist is 5% cheaper",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}
