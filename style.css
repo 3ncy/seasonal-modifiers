@@ -11,10 +11,16 @@ modifier-item {
     &[checked] {
         background-color: #adadad;
     }
+
+    &[disabled] {
+        cursor: default;
+    }
 }
 
 modifier-name {
     display: inline-block;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 modifier-description {

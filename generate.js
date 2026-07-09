@@ -19,7 +19,7 @@ function closeWriters(writers) {
 
 for (const modifier of data.seasons[0].global) {
     const generatedItem =
-        `<modifier-item>
+        `<modifier-item disabled>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-description>${modifier.description}</modifier-description>
         </modifier-item>\n`;

@@ -10,6 +10,7 @@ class ModifierItem extends HTMLElement {
     constructor() {
         super();
         this.addEventListener('click', () => {
+            if (this.disabled) return;
             this.checked = !this.checked;
         });
         if (this.children.length > 0) {
@@ -37,6 +38,10 @@ class ModifierItem extends HTMLElement {
         if (this.hasAttribute('points')) {
             updateTotal(this.checked ? this.points : -this.points);
         }
+    }
+
+    get disabled() {
+        return this.hasAttribute('disabled');
     }
 }
 
