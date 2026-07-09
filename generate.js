@@ -39,7 +39,7 @@ for (const modifier of data.seasons[0].personalNegative) {
     sw.negative.write(
         `<modifier-item>
             <modifier-name>${modifier.name}</modifier-name>
-            <modifier-points>${modifier.points}</modifier-points>
+            <modifier-points>${modifier.points.toString()[0] == '+' ? modifier.points : '+' + modifier.points}</modifier-points>
             <modifier-description>${modifier.description}</modifier-description>
         </modifier-item>\n`)
 }

@@ -1,15 +1,23 @@
 modifier-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 16px;
+    gap: 1em;
 }
 
 modifier-item {
-    display: block;
     cursor: pointer;
+    
+    display: block;
+    position: relative;
+
+    padding: 1em;
+
+    border-style: dotted;
+    border-width: 2px;
 
     &[checked] {
         background-color: #adadad;
+        border-style: dashed;
     }
 
     &[disabled] {
@@ -21,6 +29,7 @@ modifier-name {
     display: inline-block;
     text-decoration: underline;
     font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
 modifier-description {
@@ -28,7 +37,9 @@ modifier-description {
 }
 
 modifier-points {
-    display: inline-block;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
     font-size: x-large;
     margin-left: 1em;
 }
