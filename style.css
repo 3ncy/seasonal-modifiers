@@ -41,3 +41,9 @@ body {
     margin-right: 20vw;
     margin-left: 20vw;
 }
+
+footer {
+    margin-top: 2em;
+    font-size: x-small;
+    text-align: right;
+}
