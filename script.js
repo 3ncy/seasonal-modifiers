@@ -1,7 +1,13 @@
 const sumElement = document.getElementById('sum');
 
 function updateTotal(delta) {
-    sumElement.textContent = parseInt(sumElement.textContent) + delta;
+    const total = parseInt(sumElement.textContent) + delta;
+    sumElement.textContent = total;
+    if (total < 0) {
+        sumElement.setAttribute('bad', '');
+    } else {
+        sumElement.removeAttribute('bad');
+    }
 }
 
 class ModifierItem extends HTMLElement {

@@ -58,6 +58,23 @@ modifier-points {
 
 span#sum {
     font-size: x-large;
+
+    &[bad]{
+        color: red;
+    }
+}
+
+#sum-text {
+    /* To make it stick on scrolling and be on top of all the content behind it */
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color);
+    z-index: 1;
+    width: 100%;
+
+    /* visual stuff */
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 body {
