@@ -17,31 +17,39 @@ function closeWriters(writers) {
     for (const file in writers) { writers[file].end(); }
 }
 
+sw.global.write(`<!-- global template start -->`);
 for (const modifier of data.seasons[0].global) {
-    const generatedItem =
-        `<modifier-item disabled checked>
+    const generatedItem = `
+        <modifier-item disabled checked>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-description>${modifier.description}</modifier-description>
-        </modifier-item>\n`;
+        </modifier-item>`;
     sw.global.write(generatedItem);
 }
+sw.global.write(`\n       <!-- global template end -->`);
 
+sw.positive.write(`<!-- positive template start -->`);
 for (const modifier of data.seasons[0].personalPositive) {
-    sw.positive.write(
-        `<modifier-item>
+    const hasGroup = modifier.hasOwnProperty('group');
+    sw.positive.write(`
+        <modifier-item${hasGroup ? ' group="' + modifier.group + '"' : ''}>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-points>${modifier.points}</modifier-points>
             <modifier-description>${modifier.description}</modifier-description>
-        </modifier-item>\n`)
+        </modifier-item>`)
 }
+sw.positive.write(`\n       <!-- positive template end -->`);
 
+sw.negative.write(`<!-- negative template start -->`);
 for (const modifier of data.seasons[0].personalNegative) {
-    sw.negative.write(
-        `<modifier-item>
+    const hasGroup = modifier.hasOwnProperty('group');
+    sw.negative.write(`
+        <modifier-item${hasGroup ? ' group="' + modifier.group + '"' : ''}>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-points>${modifier.points.toString()[0] == '+' ? modifier.points : '+' + modifier.points}</modifier-points>
             <modifier-description>${modifier.description}</modifier-description>
-        </modifier-item>\n`)
+        </modifier-item>`)
 }
+sw.negative.write(`\n       <!-- negative template end -->`);
 
 closeWriters(sw);

@@ -5,10 +5,14 @@
 - https://x.com/nikgeneburn/status/2072019573835190714 - Ingame screenshot, visible groups
 
 ## TODO:
-- [ ] conflicting groups
+- [x] conflicting groups
 - [x] dark mode
-- [ ] sticky sum while scrolling
-- [ ] highlight sum with a red/green color
+- [x] sticky sum while scrolling
+- [x] highlight sum with a red/green color
 - [ ] mobile responsiveness
-- [ ] footer with credits and repo link
+- [x] footer with credits and repo link
 - [ ] saving to local storage
+
+## Running locally
+- [`node generate.js`](./generate.js)
+- [`node fillTemplate.js`](./fillTemplate.js)

@@ -16,6 +16,7 @@
 
     <h2>Global modifiers</h2>
     <modifier-grid>
+        <!-- global template start -->
         <modifier-item disabled checked>
             <modifier-name>No Insurance</modifier-name>
             <modifier-description>Cannot insure items before raid</modifier-description>
@@ -40,13 +41,14 @@
             <modifier-name>Seasoned PMCs</modifier-name>
             <modifier-description>Your character gains 25% more raid experience</modifier-description>
         </modifier-item>
-
+       <!-- global template end -->
     </modifier-grid>
 
     <h2>Personal</h2>
     <p id="sum-text">Current sum of selected modifiers: <span id="sum">0</span> </p>
     <h3>Positive</h3>
     <modifier-grid>
+        <!-- positive template start -->
         <modifier-item>
             <modifier-name>Marathon Runner</modifier-name>
             <modifier-points>-3</modifier-points>
@@ -102,22 +104,22 @@
             <modifier-points>-2</modifier-points>
             <modifier-description>Running speed is increased by 5%</modifier-description>
         </modifier-item>
-        <modifier-item>
+        <modifier-item group="2">
             <modifier-name>Thrombophilia</modifier-name>
             <modifier-points>-2</modifier-points>
             <modifier-description>Bleeding chance is decreased by 25%</modifier-description>
         </modifier-item>
-        <modifier-item>
+        <modifier-item group="3">
             <modifier-name>Hypodipsia</modifier-name>
             <modifier-points>-2</modifier-points>
             <modifier-description>Hydration is consumed 15% slower</modifier-description>
         </modifier-item>
-        <modifier-item>
+        <modifier-item group="4">
             <modifier-name>Polyphagia</modifier-name>
             <modifier-points>-2</modifier-points>
             <modifier-description>Energy is consumed 15% slower</modifier-description>
         </modifier-item>
-        <modifier-item>
+        <modifier-item group="1">
             <modifier-name>Sturdy Bones</modifier-name>
             <modifier-points>-3</modifier-points>
             <modifier-description>Limb fracture chance is decreased by 15%. Falling from heights deals 15% less damage</modifier-description>
@@ -132,15 +134,17 @@
             <modifier-points>-21</modifier-points>
             <modifier-description>Immediately receive Secure container Kappa</modifier-description>
         </modifier-item>
+       <!-- positive template end -->
     </modifier-grid>
     <h3>Negative</h3>
     <modifier-grid>
-        <modifier-item>
+        <!-- negative template start -->
+        <modifier-item group="2">
             <modifier-name>Hemophilia</modifier-name>
             <modifier-points>+2</modifier-points>
             <modifier-description>Bleeding chance is increased by 25%</modifier-description>
         </modifier-item>
-        <modifier-item>
+        <modifier-item group="1">
             <modifier-name>Osteoporosis</modifier-name>
             <modifier-points>+3</modifier-points>
             <modifier-description>Limb fracture chance is increased by 15%. Falling from heights deals 15% more damage</modifier-description>
@@ -160,12 +164,12 @@
             <modifier-points>+4</modifier-points>
             <modifier-description>All character skills are leveled 25% slower (Excluding Bolt-action Rifles). All character skills can only be increased up to level 30 (Excluding Crafting)</modifier-description>
         </modifier-item>
-        <modifier-item>
+        <modifier-item group="3">
             <modifier-name>Polydipsia</modifier-name>
             <modifier-points>+1</modifier-points>
             <modifier-description>Hydration is consumed 15% faster</modifier-description>
         </modifier-item>
-        <modifier-item>
+        <modifier-item group="4">
             <modifier-name>Chronic Fatigue Syndrome</modifier-name>
             <modifier-points>+1</modifier-points>
             <modifier-description>Energy is consumed 15% faster</modifier-description>
@@ -200,6 +204,7 @@
             <modifier-points>+1</modifier-points>
             <modifier-description>Movement speed is decreased by 1%. Buying items at Therapist is 5% cheaper</modifier-description>
         </modifier-item>
+       <!-- negative template end -->
     </modifier-grid>
     <script src="./script.js"></script>
 

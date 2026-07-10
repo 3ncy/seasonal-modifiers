@@ -12,13 +12,11 @@ function updateTotal(delta) {
 
 class ModifierItem extends HTMLElement {
     points = 0;
+    group = undefined;
 
     constructor() {
         super();
-        this.addEventListener('click', () => {
-            if (this.disabled) return;
-            this.checked = !this.checked;
-        });
+
         if (this.children.length > 0) {
             const pointsElement = this.getElementsByTagName('modifier-points')[0];
             if (pointsElement) {
@@ -26,8 +24,16 @@ class ModifierItem extends HTMLElement {
                 this.setAttribute('points', this.points);
             }
         }
+
+        if (this.hasAttribute('group')) { this.group = this.getAttribute('group'); }
+
+        this.addEventListener('click', () => this.#click());
     }
 
+    #click() {
+        if (this.disabled) return;
+        this.checked = !this.checked;
+    }
 
     get checked() {
         return this.hasAttribute('checked');
@@ -36,9 +42,26 @@ class ModifierItem extends HTMLElement {
     set checked(value) {
         if (value) {
             this.setAttribute('checked', '');
+
+            if (this.group) {
+                const groupItems = document.querySelectorAll(`modifier-item[group="${this.group}"]`);
+                for (const item of groupItems) {
+                    if (item === this) continue;
+                    if (item.checked) { item.#click(); }
+                    item.blocked = true;
+                }
+            }
         }
         else {
             this.removeAttribute('checked');
+
+            if (this.group) {
+                const groupItems = document.querySelectorAll(`modifier-item[group="${this.group}"]`);
+                for (const item of groupItems) {
+                    if (item === this) continue;
+                    item.blocked = false;
+                }
+            }
         }
 
         if (this.hasAttribute('points')) {
@@ -48,6 +71,19 @@ class ModifierItem extends HTMLElement {
 
     get disabled() {
         return this.hasAttribute('disabled');
+    }
+
+    get blocked() {
+        return this.hasAttribute('blocked');
+    }
+
+    set blocked(value) {
+        if (value) {
+            this.setAttribute('blocked', '');
+        }
+        else {
+            this.removeAttribute('blocked');
+        }
     }
 }
 

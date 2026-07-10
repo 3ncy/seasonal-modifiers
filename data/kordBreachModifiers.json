@@ -109,25 +109,29 @@
           "id": 12,
           "name": "Thrombophilia",
           "description": "Bleeding chance is decreased by 25%",
-          "points": -2
+          "points": -2,
+          "group": 2
         },
         {
           "id": 13,
           "name": "Hypodipsia",
           "description": "Hydration is consumed 15% slower",
-          "points": -2
+          "points": -2,
+          "group": 3
         },
         {
           "id": 14,
           "name": "Polyphagia",
           "description": "Energy is consumed 15% slower",
-          "points": -2
+          "points": -2,
+          "group": 4
         },
         {
           "id": 15,
           "name": "Sturdy Bones",
           "description": "Limb fracture chance is decreased by 15%. Falling from heights deals 15% less damage",
-          "points": -3
+          "points": -3,
+          "group": 1
         },
         {
           "id": 16,
@@ -147,13 +151,15 @@
           "id": 18,
           "name": "Hemophilia",
           "description": "Bleeding chance is increased by 25%",
-          "points": 2
+          "points": 2,
+          "group": 2
         },
         {
           "id": 19,
           "name": "Osteoporosis",
           "description": "Limb fracture chance is increased by 15%. Falling from heights deals 15% more damage",
-          "points": 3
+          "points": 3,
+          "group": 1
         },
         {
           "id": 20,
@@ -177,13 +183,15 @@
           "id": 23,
           "name": "Polydipsia",
           "description": "Hydration is consumed 15% faster",
-          "points": 1
+          "points": 1,
+          "group": 3
         },
         {
           "id": 24,
           "name": "Chronic Fatigue Syndrome",
           "description": "Energy is consumed 15% faster",
-          "points": 1
+          "points": 1,
+          "group": 4
         },
         {
           "id": 25,

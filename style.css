@@ -35,6 +35,10 @@ modifier-item {
     &[disabled] {
         cursor: default;
     }
+
+    &[blocked] {
+        opacity: 0.5;
+    }
 }
 
 modifier-name {
