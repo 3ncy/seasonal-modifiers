@@ -89,5 +89,12 @@ class ModifierItem extends HTMLElement {
 
 customElements.define('modifier-item', ModifierItem);
 
+function resetSelected() {
+    const items = document.querySelectorAll('modifier-item');
+    for (const item of items) {
+        if (item.checked) { item.checked = false; }
+    }
+}
+
 // Set correct theme switch icon after it loads
 document.querySelector('theme-switch')?.setContent(ThemeSwitch.theme === 'dark');

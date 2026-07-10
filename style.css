@@ -81,6 +81,10 @@ span#sum {
     padding-bottom: 1em;
 }
 
+button#reset {
+    margin-top: 1em;
+}
+
 body {
     margin-right: 20vw;
     margin-left: 20vw;
