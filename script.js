@@ -12,7 +12,7 @@ function updateTotal(delta) {
 
 class ModifierItem extends HTMLElement {
     points = 0;
-    group = undefined;
+    blocks = undefined;
 
     constructor() {
         super();
@@ -25,7 +25,9 @@ class ModifierItem extends HTMLElement {
             }
         }
 
-        if (this.hasAttribute('group')) { this.group = this.getAttribute('group'); }
+        if (this.hasAttribute('blocking')) {
+            this.blocks = JSON.parse(this.getElementsByTagName('modifier-blocking')[0].textContent);
+        }
 
         this.addEventListener('click', () => this.#click());
     }
@@ -43,23 +45,25 @@ class ModifierItem extends HTMLElement {
         if (value) {
             this.setAttribute('checked', '');
 
-            if (this.group) {
-                const groupItems = document.querySelectorAll(`modifier-item[group="${this.group}"]`);
-                for (const item of groupItems) {
-                    if (item === this) continue;
-                    if (item.checked) { item.#click(); }
-                    item.blocked = true;
+            if (this.blocks) {
+                for (const blockId of this.blocks) {
+                    const blockedItem = document.querySelector(`modifier-item[modifier-id="${blockId}"]`);
+                    if (blockedItem) {
+                        blockedItem.blocked = true;
+                        if (blockedItem.checked) { blockedItem.#click(); }
+                    }
                 }
             }
         }
         else {
             this.removeAttribute('checked');
 
-            if (this.group) {
-                const groupItems = document.querySelectorAll(`modifier-item[group="${this.group}"]`);
-                for (const item of groupItems) {
-                    if (item === this) continue;
-                    item.blocked = false;
+            if (this.blocks) {
+                for (const blockId of this.blocks) {
+                    const blockedItem = document.querySelector(`modifier-item[modifier-id="${blockId}"]`);
+                    if (blockedItem) {
+                        blockedItem.blocked = false;
+                    }
                 }
             }
         }

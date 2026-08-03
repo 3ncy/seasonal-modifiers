@@ -60,6 +60,10 @@ modifier-points {
     margin-left: 1em;
 }
 
+modifier-blocking {
+    display: none;
+}
+
 span#sum {
     font-size: x-large;
 

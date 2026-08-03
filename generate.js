@@ -33,24 +33,28 @@ sw.global.write(`\n       <!-- global template end -->`);
 
 sw.positive.write(`<!-- positive template start -->`);
 for (const modifier of data.seasons[0].personalPositive) {
-    const hasGroup = modifier.hasOwnProperty('group');
+    const isBlocking = modifier.hasOwnProperty('blocks');
     sw.positive.write(`
-        <modifier-item${hasGroup ? ' group="' + modifier.group + '"' : ''}>
+        <modifier-item modifier-id="${modifier.id}"${isBlocking ? ' blocking' : ''}>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-points>${modifier.points}</modifier-points>
-            <modifier-description>${br(modifier.description)}</modifier-description>
+            <modifier-description>${br(modifier.description)}</modifier-description>${isBlocking ? `
+            <modifier-blocking>${JSON.stringify(modifier.blocks)}</modifier-blocking>` : ''
+        }
         </modifier-item>`)
 }
 sw.positive.write(`\n       <!-- positive template end -->`);
 
 sw.negative.write(`<!-- negative template start -->`);
 for (const modifier of data.seasons[0].personalNegative) {
-    const hasGroup = modifier.hasOwnProperty('group');
+    const isBlocking = modifier.hasOwnProperty('blocks');
     sw.negative.write(`
-        <modifier-item${hasGroup ? ' group="' + modifier.group + '"' : ''}>
+        <modifier-item modifier-id="${modifier.id}"${isBlocking ? ' blocking' : ''}>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-points>${modifier.points.toString()[0] == '+' ? modifier.points : '+' + modifier.points}</modifier-points>
-            <modifier-description>${br(modifier.description)}</modifier-description>
+            <modifier-description>${br(modifier.description)}</modifier-description>${isBlocking ? `
+            <modifier-blocking>${JSON.stringify(modifier.blocks)}</modifier-blocking>` : ''
+        }
         </modifier-item>`)
 }
 sw.negative.write(`\n       <!-- negative template end -->`);
