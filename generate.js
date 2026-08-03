@@ -16,13 +16,16 @@ function initWriters(outputFiles) {
 function closeWriters(writers) {
     for (const file in writers) { writers[file].end(); }
 }
+function br(text) {
+    return text.replace(/\n/g, '<br>');
+}
 
 sw.global.write(`<!-- global template start -->`);
 for (const modifier of data.seasons[0].global) {
     const generatedItem = `
         <modifier-item disabled checked>
             <modifier-name>${modifier.name}</modifier-name>
-            <modifier-description>${modifier.description}</modifier-description>
+            <modifier-description>${br(modifier.description)}</modifier-description>
         </modifier-item>`;
     sw.global.write(generatedItem);
 }
@@ -35,7 +38,7 @@ for (const modifier of data.seasons[0].personalPositive) {
         <modifier-item${hasGroup ? ' group="' + modifier.group + '"' : ''}>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-points>${modifier.points}</modifier-points>
-            <modifier-description>${modifier.description}</modifier-description>
+            <modifier-description>${br(modifier.description)}</modifier-description>
         </modifier-item>`)
 }
 sw.positive.write(`\n       <!-- positive template end -->`);
@@ -47,7 +50,7 @@ for (const modifier of data.seasons[0].personalNegative) {
         <modifier-item${hasGroup ? ' group="' + modifier.group + '"' : ''}>
             <modifier-name>${modifier.name}</modifier-name>
             <modifier-points>${modifier.points.toString()[0] == '+' ? modifier.points : '+' + modifier.points}</modifier-points>
-            <modifier-description>${modifier.description}</modifier-description>
+            <modifier-description>${br(modifier.description)}</modifier-description>
         </modifier-item>`)
 }
 sw.negative.write(`\n       <!-- negative template end -->`);
