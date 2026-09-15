@@ -14,5 +14,5 @@
 - [ ] saving to local storage
 
 ## Running locally
-- [`node generate.js`](./generate.js)
-- [`node fillTemplate.js`](./fillTemplate.js)
+1. `node generate.js`
+2. `node fillTemplate.js`
