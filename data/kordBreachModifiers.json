@@ -10,39 +10,39 @@
         {
           "id": 1,
           "name": "No Insurance",
-          "description": "Cannot insure items before raid"
+          "description": "• Cannot insure items before raid"
         },
         {
           "id": 2,
           "name": "Handyman",
-          "description": "Item crafting time is reduced by 50%\nCrafting skill starts at level 51"
+          "description": "• Item crafting time is reduced by 50%\n• Crafting skill starts at level 51"
         },
         {
           "id": 3,
           "name": "Seasoned PMCs",
-          "description": "Your character gains 25% more experience"
+          "description": "• Your character gains 25% more experience"
         },
         {
           "id": 4,
           "name": "Armor Shortage",
-          "description": "Traders across Tarkov are experiencing an armor shortage"
+          "description": "• Traders across Tarkov are experiencing an armor shortage"
         },
         {
           "id": 5,
           "name": "Black Division",
-          "description": "Black Division operatives can be encountered on specific locations"
+          "description": "• Black Division operatives can be encountered on specific locations"
         },
         {
           "id": 6,
           "name": "No FiR for Hideout",
-          "description": "Hideout zones don't require the Found in Raid status"
+          "description": "• Hideout zones don't require the Found in Raid status"
         }
       ],
       "personalPositive": [
         {
           "id": 7,
           "name": "Marathon Runner",
-          "description": "Arm and leg stamina is consumed 20% slower",
+          "description": "• Arm and leg stamina is consumed 20% slower",
           "points": -3,
           "blocks": [
             8,
@@ -52,25 +52,25 @@
         {
           "id": 10,
           "name": "Bushborne",
-          "description": "Walking in vegetation generates 75% less noise and movement slowdown",
+          "description": "• Walking in vegetation generates 75% less noise and movement slowdown",
           "points": -5
         },
         {
           "id": 11,
           "name": "Juice Time",
-          "description": "Consuming a juice drink grants the Painkiller effect for 60 seconds",
+          "description": "• Consuming a juice drink grants the Painkiller effect for 60 seconds",
           "points": -2
         },
         {
           "id": 12,
           "name": "Street Tax",
-          "description": "Once per week, some Scavs pay you protection money",
+          "description": "• Once per week, some Scavs pay you protection money",
           "points": -1
         },
         {
           "id": 13,
           "name": "The Tarkov Shooter",
-          "description": "Bolt-action Rifles skill leveling speed is increased by 100%\nBolt-action Rifles skill starts at level 25",
+          "description": "• Bolt-action Rifles skill leveling speed is increased by 100%\n• Bolt-action Rifles skill starts at level 25",
           "points": -2,
           "blocks": [
             14
@@ -79,13 +79,13 @@
         {
           "id": 15,
           "name": "Diet",
-          "description": "All provisions consume 50% less resource",
+          "description": "• All provisions consume 50% less resource",
           "points": -2
         },
         {
           "id": 16,
           "name": "Thrombophilia",
-          "description": "Bleeding chance is decreased by 25%",
+          "description": "• Bleeding chance is decreased by 25%",
           "points": -2,
           "blocks": [
             17
@@ -94,7 +94,7 @@
         {
           "id": 18,
           "name": "Hypodipsia",
-          "description": "Hydration is consumed 20% slower",
+          "description": "• Hydration is consumed 20% slower",
           "points": -2,
           "blocks": [
             19
@@ -103,7 +103,7 @@
         {
           "id": 20,
           "name": "Polyphagia",
-          "description": "Energy is consumed 20% slower",
+          "description": "• Energy is consumed 20% slower",
           "points": -2,
           "blocks": [
             21,
@@ -113,65 +113,53 @@
         {
           "id": 23,
           "name": "Sturdy Bones",
-          "description": "Limb fracture chance is decreased by 25%\nFalling from heights deals 20% less damage",
+          "description": "• Limb fracture chance is decreased by 25%\n• Falling from heights deals 20% less damage",
           "points": -3,
           "blocks": [
             24
           ]
         },
         {
-          "id": 14,
-          "name": "Average",
-          "description": "All character skills are set to level 25 but cannot be leveled further (Excluding Crafting skill)",
-          "points": -12,
+          "id": 25,
+          "name": "Kappa Protocol",
+          "description": "• Immediately receive Secure container Kappa",
+          "points": -12
+        },
+        {
+          "id": 26,
+          "name": "Prodigy",
+          "description": "• Skill experience gain is increased by 30%",
+          "points": -5,
           "blocks": [
-            13,
-            25,
-            26,
+            14,
             27
           ]
         },
         {
           "id": 28,
-          "name": "Kappa Protocol",
-          "description": "Immediately receive Secure container Kappa",
-          "points": -12
-        },
-        {
-          "id": 27,
-          "name": "Prodigy",
-          "description": "Skill experience gain is increased by 30%",
-          "points": -5,
-          "blocks": [
-            14,
-            26
-          ]
-        },
-        {
-          "id": 29,
           "name": "Lucky",
-          "description": "Audentes fortuna iuvat!",
+          "description": "• Audentes fortuna iuvat!",
           "points": -1,
           "blocks": [
-            30
+            29
           ]
         },
         {
-          "id": 31,
+          "id": 30,
           "name": "Safecracker",
-          "description": "Mechanical keys have a 25% chance not to lose durability when used",
+          "description": "• Mechanical keys have a 25% chance not to lose durability when used",
           "points": -5
         },
         {
-          "id": 32,
+          "id": 31,
           "name": "Sailor's Nostalgia",
-          "description": "Consuming canned fish grants the Health Regeneration (+2) effect for 30 seconds",
+          "description": "• Consuming canned fish grants the Health Regeneration (+2) effect for 30 seconds",
           "points": -2
         },
         {
           "id": 22,
           "name": "Youth",
-          "description": "Energy is consumed 20% slower\nArm and leg stamina is increased by 10",
+          "description": "• Energy is consumed 20% slower\n• Arm and leg stamina is increased by 10",
           "points": -5,
           "blocks": [
             8,
@@ -180,9 +168,9 @@
           ]
         },
         {
-          "id": 25,
+          "id": 32,
           "name": "Hercules",
-          "description": "Strength and Endurance skills start at level 15",
+          "description": "• Strength and Endurance skills start at level 15",
           "points": -5,
           "blocks": [
             14
@@ -191,11 +179,23 @@
         {
           "id": 9,
           "name": "Sprinter",
-          "description": "Running speed is increased by 5%",
+          "description": "• Running speed is increased by 5%",
           "points": -3,
           "blocks": [
             7,
             33
+          ]
+        },
+        {
+          "id": 14,
+          "name": "Average",
+          "description": "• All character skills are set to level 25 but cannot be leveled further (Excluding Crafting skill)",
+          "points": -12,
+          "blocks": [
+            13,
+            32,
+            27,
+            26
           ]
         }
       ],
@@ -203,7 +203,7 @@
         {
           "id": 17,
           "name": "Hemophilia",
-          "description": "Bleeding chance is increased by 25%",
+          "description": "• Bleeding chance is increased by 25%",
           "points": 2,
           "blocks": [
             16
@@ -212,7 +212,7 @@
         {
           "id": 24,
           "name": "Osteoporosis",
-          "description": "Limb fracture chance is increased by 25%\nFalling from heights deals 20% more damage",
+          "description": "• Limb fracture chance is increased by 25%\n• Falling from heights deals 20% more damage",
           "points": 3,
           "blocks": [
             23
@@ -221,23 +221,23 @@
         {
           "id": 34,
           "name": "Well That Hurt!",
-          "description": "All medkit uses consume 25% more resource",
+          "description": "• All medkit uses consume 25% more resource",
           "points": 2
         },
         {
-          "id": 26,
+          "id": 27,
           "name": "Incompetent",
-          "description": "All character skills are leveled 25% slower (Excluding Bolt-action Rifles)\nAll character skills can only be increased up to level 30 (Excluding Crafting)",
+          "description": "• All character skills are leveled 25% slower (Excluding Bolt-action Rifles)\n• All character skills can only be increased up to level 30 (Excluding Crafting)",
           "points": 10,
           "blocks": [
             14,
-            27
+            26
           ]
         },
         {
           "id": 19,
           "name": "Polydipsia",
-          "description": "Hydration is consumed 15% faster",
+          "description": "• Hydration is consumed 15% faster",
           "points": 2,
           "blocks": [
             18
@@ -246,7 +246,7 @@
         {
           "id": 21,
           "name": "Chronic Fatigue Syndrome",
-          "description": "Energy is consumed 20% faster",
+          "description": "• Energy is consumed 20% faster",
           "points": 2,
           "blocks": [
             20,
@@ -256,7 +256,7 @@
         {
           "id": 35,
           "name": "Personality Vacuum",
-          "description": "Charisma skill cannot be increased\nAll trader items cost 20% more",
+          "description": "• Charisma skill cannot be increased\n• All trader items cost 20% more",
           "points": 2,
           "blocks": [
             33
@@ -265,31 +265,25 @@
         {
           "id": 36,
           "name": "Dr. Jekyll",
-          "description": "After gaining the Fresh Wound status, it cannot be removed until the end of the raid",
+          "description": "• After gaining the Fresh Wound status, it cannot be removed until the end of the raid",
           "points": 1
         },
         {
           "id": 37,
           "name": "Allergic",
-          "description": "Become allergic to 3 random items from the Provisions or Medication category",
+          "description": "• Become allergic to 3 random items from the Provisions or Medication category",
           "points": 3
         },
         {
           "id": 38,
-          "name": "Broken Secure Container",
-          "description": "Secure container can only be filled with cash, keys, dogtags, special equipment, certain containers and Battle Pass documents",
-          "points": 6
-        },
-        {
-          "id": 39,
           "name": "No Flea Market",
-          "description": "Trading with players on the Flea Market is disabled",
+          "description": "• Trading with players on the Flea Market is disabled",
           "points": 10
         },
         {
           "id": 33,
           "name": "Third Leg",
-          "description": "Movement speed is decreased by 1%\nBuying items at Therapist is 5% cheaper",
+          "description": "• Movement speed is decreased by 1%\n• Buying items at Therapist is 5% cheaper",
           "points": 1,
           "blocks": [
             9,
@@ -297,23 +291,35 @@
           ]
         },
         {
-          "id": 30,
+          "id": 29,
           "name": "Unlucky",
-          "description": "Your bad luck can sometimes have dire consequences",
+          "description": "• Your bad luck can sometimes have dire consequences",
           "points": 1,
           "blocks": [
-            29
+            28
           ]
         },
         {
           "id": 8,
           "name": "Exhaustion",
-          "description": "Arm and leg stamina recovers 20% slower\nArm and leg stamina is reduced by 10",
+          "description": "• Arm and leg stamina recovers 20% slower\n• Arm and leg stamina is reduced by 10",
           "points": 5,
           "blocks": [
             7,
             22
           ]
+        },
+        {
+          "id": 39,
+          "name": "Broken Secure Container",
+          "description": "• Secure container can only be filled with cash, keys, dogtags, special equipment, certain containers and Battle Pass documents",
+          "points": 6
+        },
+        {
+          "id": 40,
+          "name": "Underdog",
+          "description": "• You started the season later than everyone else, but it’s too early to count you out.\n• +4 additional Modifier Points.",
+          "points": 4
         }
       ]
     }
