@@ -322,6 +322,147 @@
           "points": 4
         }
       ]
+    },
+    {
+      "id": 1,
+      "label": "Season 1",
+      "global": [],
+      "personalPositive": [
+        {
+          "id": 1,
+          "name": "Advanced Hideout",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 2,
+          "name": "Fast Crafting",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 3,
+          "name": "Ref's Builders",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 4,
+          "name": "Enhanced Secure Container",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 5,
+          "name": "Lockpicker",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 6,
+          "name": "Cold-blooded",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 7,
+          "name": "Tap, Rack, Roll",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 8,
+          "name": "Kleptomaniac",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 9,
+          "name": "Friend's Extract",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 10,
+          "name": "Introvert",
+          "description": "",
+          "points": -0
+        },
+        {
+          "id": 11,
+          "name": "Heavyweight",
+          "description": "",
+          "points": -0
+        }
+      ],
+      "personalNegative": [
+        {
+          "id": 12,
+          "name": "Deadline",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 13,
+          "name": "Extrovert",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 14,
+          "name": "Schizo",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 15,
+          "name": "Three-fingered",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 16,
+          "name": "Shaky Aim",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 17,
+          "name": "No Repairs",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 18,
+          "name": "Coagulopathy",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 19,
+          "name": "No Love from Fence",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 20,
+          "name": "No Scav Runs",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 21,
+          "name": "Zero to Hero",
+          "description": "",
+          "points": 0
+        },
+        {
+          "id": 22,
+          "name": "Loose Tongue",
+          "description": "",
+          "points": 0
+        }
+      ]
     }
   ]
 }

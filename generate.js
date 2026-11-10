@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 
 const data = JSON.parse(fs.readFileSync('./data/modifiers.json', 'utf8'));
-const seasonIndex = 0; // one less than season number
+const seasonIndex = 1; // one less than season number
 
 const sw = initWriters(['global', 'positive', 'negative']);
 

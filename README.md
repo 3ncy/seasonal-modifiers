@@ -3,6 +3,9 @@
 ## > [View Online](https://3ncy.github.io/seasonal-modifiers/) <
 
 ## Sources
+### Season 2
+- https://x.com/nikgeneburn/status/2120069264686342351 - Personal modifier list
+### Season 1
 - https://x.com/nikgeneburn/status/2075177627598323906 - Full table with descriptions and weights
 - https://x.com/nikgeneburn/status/2072652001956008146 - Full list
 - https://x.com/nikgeneburn/status/2072019573835190714 - Ingame screenshot, visible groups

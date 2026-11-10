@@ -4,44 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Season 1: Kord Breach modifiers</title>
+    <title>Season 2 modifiers</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./themeSwitcher.js"></script>
 </head>
 
 <body>
-    <h1>Escape from Tarkov, Season 1: Kord Breach</h1>
+    <h1>Escape from Tarkov, Season 2</h1>
 
     <theme-switch>🌑</theme-switch>
 
     <h2>Global modifiers</h2>
     <modifier-grid>
         <!-- global template start -->
-        <modifier-item disabled checked>
-            <modifier-name>No Insurance</modifier-name>
-            <modifier-description>• Cannot insure items before raid</modifier-description>
-        </modifier-item>
-        <modifier-item disabled checked>
-            <modifier-name>Handyman</modifier-name>
-            <modifier-description>• Item crafting time is reduced by 50%<br>• Crafting skill starts at level 51</modifier-description>
-        </modifier-item>
-        <modifier-item disabled checked>
-            <modifier-name>Seasoned PMCs</modifier-name>
-            <modifier-description>• Your character gains 25% more experience</modifier-description>
-        </modifier-item>
-        <modifier-item disabled checked>
-            <modifier-name>Armor Shortage</modifier-name>
-            <modifier-description>• Traders across Tarkov are experiencing an armor shortage</modifier-description>
-        </modifier-item>
-        <modifier-item disabled checked>
-            <modifier-name>Black Division</modifier-name>
-            <modifier-description>• Black Division operatives can be encountered on specific locations</modifier-description>
-        </modifier-item>
-        <modifier-item disabled checked>
-            <modifier-name>No FiR for Hideout</modifier-name>
-            <modifier-description>• Hideout zones don't require the Found in Raid status</modifier-description>
-        </modifier-item>
-       <!-- global template end -->
+        <!-- global template end -->
     </modifier-grid>
 
     <h2>Personal</h2>
@@ -49,201 +25,120 @@
     <h3>Positive</h3>
     <modifier-grid>
         <!-- positive template start -->
-        <modifier-item modifier-id="7" blocking>
-            <modifier-name>Marathon Runner</modifier-name>
-            <modifier-points>-3</modifier-points>
-            <modifier-description>• Arm and leg stamina is consumed 20% slower</modifier-description>
-            <modifier-blocking>[8,9]</modifier-blocking>
+        <modifier-item modifier-id="1">
+            <modifier-name>Advanced Hideout</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="2">
+            <modifier-name>Fast Crafting</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="3">
+            <modifier-name>Ref's Builders</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="4">
+            <modifier-name>Enhanced Secure Container</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="5">
+            <modifier-name>Lockpicker</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="6">
+            <modifier-name>Cold-blooded</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="7">
+            <modifier-name>Tap, Rack, Roll</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="8">
+            <modifier-name>Kleptomaniac</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
+        </modifier-item>
+        <modifier-item modifier-id="9">
+            <modifier-name>Friend's Extract</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
         <modifier-item modifier-id="10">
-            <modifier-name>Bushborne</modifier-name>
-            <modifier-points>-5</modifier-points>
-            <modifier-description>• Walking in vegetation generates 75% less noise and movement slowdown</modifier-description>
+            <modifier-name>Introvert</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
         <modifier-item modifier-id="11">
-            <modifier-name>Juice Time</modifier-name>
-            <modifier-points>-2</modifier-points>
-            <modifier-description>• Consuming a juice drink grants the Painkiller effect for 60 seconds</modifier-description>
-        </modifier-item>
-        <modifier-item modifier-id="12">
-            <modifier-name>Street Tax</modifier-name>
-            <modifier-points>-1</modifier-points>
-            <modifier-description>• Once per week, some Scavs pay you protection money</modifier-description>
-        </modifier-item>
-        <modifier-item modifier-id="13" blocking>
-            <modifier-name>The Tarkov Shooter</modifier-name>
-            <modifier-points>-2</modifier-points>
-            <modifier-description>• Bolt-action Rifles skill leveling speed is increased by 100%<br>• Bolt-action Rifles skill starts at level 25</modifier-description>
-            <modifier-blocking>[14]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="15">
-            <modifier-name>Diet</modifier-name>
-            <modifier-points>-2</modifier-points>
-            <modifier-description>• All provisions consume 50% less resource</modifier-description>
-        </modifier-item>
-        <modifier-item modifier-id="16" blocking>
-            <modifier-name>Thrombophilia</modifier-name>
-            <modifier-points>-2</modifier-points>
-            <modifier-description>• Bleeding chance is decreased by 25%</modifier-description>
-            <modifier-blocking>[17]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="18" blocking>
-            <modifier-name>Hypodipsia</modifier-name>
-            <modifier-points>-2</modifier-points>
-            <modifier-description>• Hydration is consumed 20% slower</modifier-description>
-            <modifier-blocking>[19]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="20" blocking>
-            <modifier-name>Polyphagia</modifier-name>
-            <modifier-points>-2</modifier-points>
-            <modifier-description>• Energy is consumed 20% slower</modifier-description>
-            <modifier-blocking>[21,22]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="23" blocking>
-            <modifier-name>Sturdy Bones</modifier-name>
-            <modifier-points>-3</modifier-points>
-            <modifier-description>• Limb fracture chance is decreased by 25%<br>• Falling from heights deals 20% less damage</modifier-description>
-            <modifier-blocking>[24]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="25">
-            <modifier-name>Kappa Protocol</modifier-name>
-            <modifier-points>-12</modifier-points>
-            <modifier-description>• Immediately receive Secure container Kappa</modifier-description>
-        </modifier-item>
-        <modifier-item modifier-id="26" blocking>
-            <modifier-name>Prodigy</modifier-name>
-            <modifier-points>-5</modifier-points>
-            <modifier-description>• Skill experience gain is increased by 30%</modifier-description>
-            <modifier-blocking>[14,27]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="28" blocking>
-            <modifier-name>Lucky</modifier-name>
-            <modifier-points>-1</modifier-points>
-            <modifier-description>• Audentes fortuna iuvat!</modifier-description>
-            <modifier-blocking>[29]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="30">
-            <modifier-name>Safecracker</modifier-name>
-            <modifier-points>-5</modifier-points>
-            <modifier-description>• Mechanical keys have a 25% chance not to lose durability when used</modifier-description>
-        </modifier-item>
-        <modifier-item modifier-id="31">
-            <modifier-name>Sailor's Nostalgia</modifier-name>
-            <modifier-points>-2</modifier-points>
-            <modifier-description>• Consuming canned fish grants the Health Regeneration (+2) effect for 30 seconds</modifier-description>
-        </modifier-item>
-        <modifier-item modifier-id="22" blocking>
-            <modifier-name>Youth</modifier-name>
-            <modifier-points>-5</modifier-points>
-            <modifier-description>• Energy is consumed 20% slower<br>• Arm and leg stamina is increased by 10</modifier-description>
-            <modifier-blocking>[8,21,20]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="32" blocking>
-            <modifier-name>Hercules</modifier-name>
-            <modifier-points>-5</modifier-points>
-            <modifier-description>• Strength and Endurance skills start at level 15</modifier-description>
-            <modifier-blocking>[14]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="9" blocking>
-            <modifier-name>Sprinter</modifier-name>
-            <modifier-points>-3</modifier-points>
-            <modifier-description>• Running speed is increased by 5%</modifier-description>
-            <modifier-blocking>[7,33]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="14" blocking>
-            <modifier-name>Average</modifier-name>
-            <modifier-points>-12</modifier-points>
-            <modifier-description>• All character skills are set to level 25 but cannot be leveled further (Excluding Crafting skill)</modifier-description>
-            <modifier-blocking>[13,32,27,26]</modifier-blocking>
+            <modifier-name>Heavyweight</modifier-name>
+            <modifier-points>0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
        <!-- positive template end -->
     </modifier-grid>
     <h3>Negative</h3>
     <modifier-grid>
         <!-- negative template start -->
-        <modifier-item modifier-id="17" blocking>
-            <modifier-name>Hemophilia</modifier-name>
-            <modifier-points>+2</modifier-points>
-            <modifier-description>• Bleeding chance is increased by 25%</modifier-description>
-            <modifier-blocking>[16]</modifier-blocking>
+        <modifier-item modifier-id="12">
+            <modifier-name>Deadline</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="24" blocking>
-            <modifier-name>Osteoporosis</modifier-name>
-            <modifier-points>+3</modifier-points>
-            <modifier-description>• Limb fracture chance is increased by 25%<br>• Falling from heights deals 20% more damage</modifier-description>
-            <modifier-blocking>[23]</modifier-blocking>
+        <modifier-item modifier-id="13">
+            <modifier-name>Extrovert</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="34">
-            <modifier-name>Well That Hurt!</modifier-name>
-            <modifier-points>+2</modifier-points>
-            <modifier-description>• All medkit uses consume 25% more resource</modifier-description>
+        <modifier-item modifier-id="14">
+            <modifier-name>Schizo</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="27" blocking>
-            <modifier-name>Incompetent</modifier-name>
-            <modifier-points>+10</modifier-points>
-            <modifier-description>• All character skills are leveled 25% slower (Excluding Bolt-action Rifles)<br>• All character skills can only be increased up to level 30 (Excluding Crafting)</modifier-description>
-            <modifier-blocking>[14,26]</modifier-blocking>
+        <modifier-item modifier-id="15">
+            <modifier-name>Three-fingered</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="19" blocking>
-            <modifier-name>Polydipsia</modifier-name>
-            <modifier-points>+2</modifier-points>
-            <modifier-description>• Hydration is consumed 15% faster</modifier-description>
-            <modifier-blocking>[18]</modifier-blocking>
+        <modifier-item modifier-id="16">
+            <modifier-name>Shaky Aim</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="21" blocking>
-            <modifier-name>Chronic Fatigue Syndrome</modifier-name>
-            <modifier-points>+2</modifier-points>
-            <modifier-description>• Energy is consumed 20% faster</modifier-description>
-            <modifier-blocking>[20,22]</modifier-blocking>
+        <modifier-item modifier-id="17">
+            <modifier-name>No Repairs</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="35" blocking>
-            <modifier-name>Personality Vacuum</modifier-name>
-            <modifier-points>+2</modifier-points>
-            <modifier-description>• Charisma skill cannot be increased<br>• All trader items cost 20% more</modifier-description>
-            <modifier-blocking>[33]</modifier-blocking>
+        <modifier-item modifier-id="18">
+            <modifier-name>Coagulopathy</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="36">
-            <modifier-name>Dr. Jekyll</modifier-name>
-            <modifier-points>+1</modifier-points>
-            <modifier-description>• After gaining the Fresh Wound status, it cannot be removed until the end of the raid</modifier-description>
+        <modifier-item modifier-id="19">
+            <modifier-name>No Love from Fence</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="37">
-            <modifier-name>Allergic</modifier-name>
-            <modifier-points>+3</modifier-points>
-            <modifier-description>• Become allergic to 3 random items from the Provisions or Medication category</modifier-description>
+        <modifier-item modifier-id="20">
+            <modifier-name>No Scav Runs</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="38">
-            <modifier-name>No Flea Market</modifier-name>
-            <modifier-points>+10</modifier-points>
-            <modifier-description>• Trading with players on the Flea Market is disabled</modifier-description>
+        <modifier-item modifier-id="21">
+            <modifier-name>Zero to Hero</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
-        <modifier-item modifier-id="33" blocking>
-            <modifier-name>Third Leg</modifier-name>
-            <modifier-points>+1</modifier-points>
-            <modifier-description>• Movement speed is decreased by 1%<br>• Buying items at Therapist is 5% cheaper</modifier-description>
-            <modifier-blocking>[9,35]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="29" blocking>
-            <modifier-name>Unlucky</modifier-name>
-            <modifier-points>+1</modifier-points>
-            <modifier-description>• Your bad luck can sometimes have dire consequences</modifier-description>
-            <modifier-blocking>[28]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="8" blocking>
-            <modifier-name>Exhaustion</modifier-name>
-            <modifier-points>+5</modifier-points>
-            <modifier-description>• Arm and leg stamina recovers 20% slower<br>• Arm and leg stamina is reduced by 10</modifier-description>
-            <modifier-blocking>[7,22]</modifier-blocking>
-        </modifier-item>
-        <modifier-item modifier-id="39">
-            <modifier-name>Broken Secure Container</modifier-name>
-            <modifier-points>+6</modifier-points>
-            <modifier-description>• Secure container can only be filled with cash, keys, dogtags, special equipment, certain containers and Battle Pass documents</modifier-description>
-        </modifier-item>
-        <modifier-item modifier-id="40">
-            <modifier-name>Underdog</modifier-name>
-            <modifier-points>+4</modifier-points>
-            <modifier-description>• You started the season later than everyone else, but it’s too early to count you out.<br>• +4 additional Modifier Points.</modifier-description>
+        <modifier-item modifier-id="22">
+            <modifier-name>Loose Tongue</modifier-name>
+            <modifier-points>+0</modifier-points>
+            <modifier-description></modifier-description>
         </modifier-item>
        <!-- negative template end -->
     </modifier-grid>
