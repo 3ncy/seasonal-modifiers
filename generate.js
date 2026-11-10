@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 
-const data = JSON.parse(fs.readFileSync('./data/kordBreachModifiers.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('./data/modifiers.json', 'utf8'));
+const seasonIndex = 0; // one less than season number
 
 const sw = initWriters(['global', 'positive', 'negative']);
 
@@ -13,15 +14,11 @@ function initWriters(outputFiles) {
     }
     return writers;
 }
-function closeWriters(writers) {
-    for (const file in writers) { writers[file].end(); }
-}
-function br(text) {
-    return text.replace(/\n/g, '<br>');
-}
+function closeWriters(writers) { for (const file in writers) { writers[file].end(); } }
+function br(text) { return text.replace(/\n/g, '<br>'); }
 
 sw.global.write(`<!-- global template start -->`);
-for (const modifier of data.seasons[0].global) {
+for (const modifier of data.seasons[seasonIndex].global) {
     const generatedItem = `
         <modifier-item disabled checked>
             <modifier-name>${modifier.name}</modifier-name>
@@ -29,10 +26,10 @@ for (const modifier of data.seasons[0].global) {
         </modifier-item>`;
     sw.global.write(generatedItem);
 }
-sw.global.write(`\n       <!-- global template end -->`);
+sw.global.write(`\n        <!-- global template end -->`);
 
 sw.positive.write(`<!-- positive template start -->`);
-for (const modifier of data.seasons[0].personalPositive) {
+for (const modifier of data.seasons[seasonIndex].personalPositive) {
     const isBlocking = modifier.hasOwnProperty('blocks');
     sw.positive.write(`
         <modifier-item modifier-id="${modifier.id}"${isBlocking ? ' blocking' : ''}>
@@ -46,7 +43,7 @@ for (const modifier of data.seasons[0].personalPositive) {
 sw.positive.write(`\n       <!-- positive template end -->`);
 
 sw.negative.write(`<!-- negative template start -->`);
-for (const modifier of data.seasons[0].personalNegative) {
+for (const modifier of data.seasons[seasonIndex].personalNegative) {
     const isBlocking = modifier.hasOwnProperty('blocks');
     sw.negative.write(`
         <modifier-item modifier-id="${modifier.id}"${isBlocking ? ' blocking' : ''}>
